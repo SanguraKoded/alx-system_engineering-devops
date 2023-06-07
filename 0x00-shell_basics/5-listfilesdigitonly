@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lnA
+find . -maxdepth 1 -exec stat -c "%A %U %G %s %y %n" {} +
